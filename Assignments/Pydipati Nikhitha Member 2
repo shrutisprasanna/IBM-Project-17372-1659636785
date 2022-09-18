@@ -1,1 +1,48 @@
+#1
+s = "Hi there Sam!"
+x = s.split()
+print(x)
 
+#2
+planet = "Earth"
+diameter = 12742
+print("The diameter of {} is {} kilometers.".format(planet,diameter))
+
+#3
+d = {'k1':[1,2,3,{'tricky':['oh','man','inception',{'target':[1,2,3,'hello']}]}]}
+print(d['k1'][3]['tricky'][3]['target'][3])
+import numpy as np
+
+#4
+array=np.zeros(10)
+print(array)
+array=np.ones(10)*5
+print(array)
+
+#5
+array=np.arange(20,35,2)
+print(array)
+
+#6
+array=np.arange(0, 9).reshape(3,3)
+print(array)
+
+#7
+a = np.array([1, 2, 3])
+b = np.array([4, 5, 6])
+ans=np.concatenate((a, b), axis=0)
+print(ans)
+
+#8
+import pandas as pd
+df=pd.DataFrame(index=np.arange(3), columns=np.arange(2))
+print(df)
+
+#9
+dates=pd.date_range(start ='1-1-2023',end ='10-02-2023', freq ='24H')
+print(dates)
+
+#10
+lists = [[1, 'aaa', 22], [2, 'bbb', 25], [3, 'ccc', 24]]
+df = pd.DataFrame(lists)
+print(df)
